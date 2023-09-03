@@ -48,8 +48,12 @@ const useShare = () => {
                     description: "Something went wrong while trying to share 😢 Fallback to copying the link to your clipboard",
                 })
                 break
+            case null:
+                //OK
+                break
             default:
-            // OK
+                const _exhaustiveCheck: never = res
+                return _exhaustiveCheck
         }
 
     }

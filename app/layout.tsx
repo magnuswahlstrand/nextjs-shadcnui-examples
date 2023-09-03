@@ -32,6 +32,10 @@ const otherNavItems = [
         title: "Web Share API",
         href: "/examples/web-share-api",
     },
+    {
+        title: "Detect Device Type",
+        href: "/examples/detect-device-type",
+    },
 ]
 
 

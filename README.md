@@ -7,3 +7,4 @@ Examples and experiments using shadcn/ui and or NextJS.
   * Toasts
 * Other
   * Web Share API
+  * Detect Device Type

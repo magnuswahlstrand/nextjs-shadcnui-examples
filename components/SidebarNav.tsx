@@ -27,7 +27,7 @@ export function SidebarNav({className, items, name, ...props}: SidebarNavProps) 
             )}
             {...props}
         >
-            {name && <div className="font-bold text-md mt-4">{name}</div>}
+            {name && <div className="font-bold text-md mt-4 whitespace-nowrap">{name}</div>}
             {items.map((item) => (
                 <Link
                     key={item.href}
@@ -36,7 +36,7 @@ export function SidebarNav({className, items, name, ...props}: SidebarNavProps) 
                         pathname === item.href
                             ? "text-foreground"
                             : "text-muted-foreground",
-                        "justify-start hover:underline"
+                        "justify-start hover:underline whitespace-nowrap"
                     )}
                 >
                     {item.title}
