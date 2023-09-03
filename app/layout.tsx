@@ -53,12 +53,12 @@ export default function RootLayout({
                 Using <Link href="https://ui.shadcn.com/">shadcn/ui</Link> components in Next.js
             </p>
             <Separator className="my-5"/>
-            <div className="flex">
-                <aside className="w-1/5">
+            <div className="flex flex-col sm:flex-row">
+                <aside className="sm:w-1/5 w-full">
                     <SidebarNav items={componentsNavItems} name="Components"/>
                     <SidebarNav items={otherNavItems} name="Other"/>
                 </aside>
-                <Separator orientation={"vertical"} className="bg-red-500"/>
+                <Separator className="my-1 sm:hidden"/>
                 <div className="flex flex-col items-center w-full">
                     {children}
                 </div>
